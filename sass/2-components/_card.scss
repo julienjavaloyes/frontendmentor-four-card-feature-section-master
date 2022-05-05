@@ -1,0 +1,50 @@
+@use "../0-abstracts/colors" as c;
+
+.card {
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 5%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 18%;
+    background-position: right 1rem bottom 2rem;
+    box-shadow: 0rem 0.5rem 1rem c.$GrayishBlue;
+    .card-title {
+        margin-top: 1rem;
+        padding: 0.5rem 1.5rem;
+    }
+    .card-desc {
+        color:c.$GrayishBlue;
+        padding: 0rem 1.5rem;
+        padding-bottom: 8rem;
+    }
+}
+
+.card1 {
+    .card-header{
+        height: 0.3rem;
+        background-color: c.$Cyan;
+    }
+    background-image: url('../images/icon-supervisor.svg');
+}
+.card2 {
+    .card-header{
+        height: 0.4rem;
+        background-color: c.$Red;
+    }
+    background-image: url('../images/icon-team-builder.svg');
+}
+.card3 {
+    .card-header{
+        height: 0.4rem;
+        background-color: c.$Orange;
+    }
+    background-image: url('../images/icon-karma.svg');
+}
+.card4 {
+    .card-header{
+        height: 0.4rem;
+        background-color: c.$Blue;
+    }
+    background-image: url('../images/icon-calculator.svg');
+}

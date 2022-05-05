@@ -1,0 +1,36 @@
+@use  '../0-abstracts/colors' as c;
+//example $fontDisplay: 'Big Shoulders Display', cursive;
+$fontDisplay: 'Poppins', sans-serif;
+
+body {
+    font-family: $fontDisplay;
+}
+
+header {
+    text-align: center;
+    .hero-subtitle{
+        font-weight: 200;
+        font-size: 1.45rem;
+    }
+    .hero-title {
+        font-weight: 600;
+        font-size: 1.5rem;
+    }
+    .hero-desc {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
+
+main {
+    .card {
+        .card-title{
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+        .card-desc {
+            font-weight: 400;
+            font-size: 0.8rem;
+        }
+    }
+}

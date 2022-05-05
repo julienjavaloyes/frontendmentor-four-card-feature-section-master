@@ -1,0 +1,173 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/*
+h1,
+h2,
+h3 {
+    margin-top: 0;
+}
+
+a,
+a:visited,
+a:active {
+    text-decoration: none;
+}
+*/
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  text-align: center;
+}
+header .hero-subtitle {
+  font-weight: 200;
+  font-size: 1.45rem;
+}
+header .hero-title {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+header .hero-desc {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+main .card .card-title {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+main .card .card-desc {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+.card {
+  margin-bottom: 2rem;
+  background-color: white;
+  border-radius: 5%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 18%;
+  background-position: right 1rem bottom 2rem;
+  box-shadow: 0rem 0.5rem 1rem hsl(229deg, 6%, 66%);
+}
+.card .card-title {
+  margin-top: 1rem;
+  padding: 0.5rem 1.5rem;
+}
+.card .card-desc {
+  color: hsl(229deg, 6%, 66%);
+  padding: 0rem 1.5rem;
+  padding-bottom: 8rem;
+}
+
+.card1 {
+  background-image: url("../images/icon-supervisor.svg");
+}
+.card1 .card-header {
+  height: 0.3rem;
+  background-color: hsl(180deg, 62%, 55%);
+}
+
+.card2 {
+  background-image: url("../images/icon-team-builder.svg");
+}
+.card2 .card-header {
+  height: 0.4rem;
+  background-color: hsl(0deg, 78%, 62%);
+}
+
+.card3 {
+  background-image: url("../images/icon-karma.svg");
+}
+.card3 .card-header {
+  height: 0.4rem;
+  background-color: hsl(34deg, 97%, 64%);
+}
+
+.card4 {
+  background-image: url("../images/icon-calculator.svg");
+}
+.card4 .card-header {
+  height: 0.4rem;
+  background-color: hsl(212deg, 86%, 64%);
+}
+
+body {
+  background-color: hsl(0deg, 0%, 98%);
+}
+
+header {
+  width: 330px;
+  margin: 5rem auto;
+}
+header .hero-title {
+  color: hsl(234deg, 12%, 34%);
+}
+header .hero-subtitle {
+  color: hsl(234deg, 12%, 34%);
+}
+header .hero-desc {
+  margin: 1rem 0px;
+  color: hsl(229deg, 6%, 66%);
+}
+
+main {
+  width: 330px;
+  margin: auto;
+}
+main .card {
+  color: hsl(234deg, 12%, 34%);
+}
+
+@media (min-width: 900px) {
+  header {
+    width: 600px;
+  }
+
+  main {
+    width: 950px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 25px;
+    grid-auto-rows: -webkit-min-content;
+    grid-auto-rows: min-content;
+  }
+
+  .card1 {
+    grid-column: 1;
+    grid-row: 2/4;
+  }
+
+  .card2 {
+    grid-column: 2;
+    grid-row: 1/3;
+  }
+
+  .card3 {
+    grid-column: 2;
+    grid-row: 3/5;
+  }
+
+  .card4 {
+    grid-column: 3;
+    grid-row: 2/4;
+  }
+}
+@media only screen and (min-width: 900px) and (max-height: 550px) {
+  .container {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}/*# sourceMappingURL=main.css.map */
